@@ -1,0 +1,21 @@
+<%- include('partials/header') -%>
+<div class="container">
+  <h1>Compose</h1>
+  <form action="/compose" method="post">
+    <div class="form-group">
+      <label>Title</label>
+      <input class="form-control" type="text" name="compose" />
+      <label>Upload Link Gambar </label>
+      <input class="form-control" type="text" name="gambar" />
+      <label>Penulis</label>
+
+      <input class="form-control" type="text" name="penulis" />
+      <label>Penerbit</label>
+      <input class="form-control" type="text" name="penerbit" />
+      <label>Tentang Buku ini</label>
+      <textarea class="form-control" name="postbody" rows="4" cols="30"> </textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Publish</button>
+  </form>
+</div>
+<%- include('partials/footer') -%>
